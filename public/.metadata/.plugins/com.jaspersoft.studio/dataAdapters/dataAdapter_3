@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>AFI Live</name><driver>org.gjt.mm.mysql.Driver</driver><username>root</username><password/><savePassword>true</savePassword><url>jdbc:mysql://192.168.88.50/wbapps_live</url><database/><serverAddress/></jdbcDataAdapter>

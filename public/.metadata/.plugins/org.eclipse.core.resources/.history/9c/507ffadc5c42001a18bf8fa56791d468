@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="150" pageHeight="25" columnWidth="148" leftMargin="1" rightMargin="1" topMargin="1" bottomMargin="1" uuid="bc8a8180-753d-4a02-95d1-0ea665223e20">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="LocalhostWBApps"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="id_shipment" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select date_format(min(date(date2)), "%d/%m/%Y") as datemin,
+date_format(max(date(date2)), "%d/%m/%Y") as datemax
+from transactions
+where id_shipment = '$P!{id_shipment}']]>
+	</queryString>
+	<field name="datemin" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+	</field>
+	<field name="datemax" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+	</field>
+	<detail>
+		<band height="23">
+			<textField>
+				<reportElement x="1" y="2" width="140" height="16" uuid="1a3f5788-3df3-44de-aaac-de59baf14387"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datemin}+" to "+$F{datemax}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

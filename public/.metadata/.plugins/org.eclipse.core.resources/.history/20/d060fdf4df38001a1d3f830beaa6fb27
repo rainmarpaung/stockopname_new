@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Flour" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8d6722de-fc45-426d-ab80-eeb38cd3c6a2">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="77" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="-1" width="70" height="55" uuid="dda21967-bc27-47c5-be63-74fd6a365261"/>
+				<imageExpression><![CDATA["D:\server\FileZillaFTP\source\interface\misc\wbapps\public\MyReports\logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="254" y="12" width="294" height="22" uuid="65779bd0-e679-4b01-9992-0bf1b2472941"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAILY SALES FLOUR RECORD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="670" y="0" width="129" height="13" uuid="24490958-6b20-43aa-9e4c-94a30c0c9b07"/>
+				<textElement>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<text><![CDATA[Doc No.   : F-CA-29]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="670" y="15" width="129" height="14" uuid="188b187e-709d-49df-a878-1bbe25a37b3b"/>
+				<textElement>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<text><![CDATA[Revision No    : 00]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="670" y="30" width="129" height="14" uuid="f2ab956a-1a5d-4bff-b686-37bddaf52978"/>
+				<textElement>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<text><![CDATA[Effective Date : 01-Apr-2019]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="54" width="802" height="1" uuid="c4b80d51-dec0-4a8b-ab98-9ad97230f15a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="1" height="54" uuid="73cda049-33c5-4a47-9b8f-d5bd4fcbe24a"/>
+			</line>
+			<line>
+				<reportElement x="80" y="0" width="1" height="54" uuid="a03fa5c9-8a90-4878-86b9-7f0ff7d2e9b8"/>
+			</line>
+			<line>
+				<reportElement x="666" y="0" width="1" height="55" uuid="cd9d548d-75ec-4d7b-bfce-cda97115e04e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="801" y="0" width="1" height="55" uuid="1d3c6f10-bd51-42da-bbb2-452c2b7bbee0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="62" width="29" height="14" uuid="650a9b65-2c75-448e-beb5-e71579f848c9"/>
+				<textElement>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="30" y="62" width="96" height="14" uuid="7448691a-6f88-4eb2-a866-2ae63c2aca70"/>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="54" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="1" width="802" height="1" uuid="aeffced1-9fcc-46f1-8ff2-a35485ec2df9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="2" y="3" width="18" height="14" uuid="d03aa216-5a21-4697-bc2d-bd87705c4195"/>
+				<textElement>
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="802" height="1" uuid="b762e833-b455-4fd9-9bfc-b3f2cc3fe6e1">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="1" width="1" height="20" uuid="a54569c8-4888-49b6-b6b8-2d059a613f52">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="22" y="1" width="1" height="20" uuid="d88a36fc-e7e5-4de2-bffe-516b9f4b14ed">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="24" y="3" width="102" height="14" uuid="51912b02-0995-4ed2-ac50-08330175d565"/>
+				<textElement>
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<text><![CDATA[TRANSPORTER NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="4" width="102" height="14" uuid="6d455b16-9e9c-44c2-a4bb-911e4b0f73db"/>
+				<textElement>
+					<font size="9"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<text><![CDATA[CUSTOMER NAME]]></text>
+			</staticText>
+			<line>
+				<reportElement x="128" y="1" width="1" height="20" uuid="71b95cb8-c9d6-4ecf-aef2-5851dcae40c8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

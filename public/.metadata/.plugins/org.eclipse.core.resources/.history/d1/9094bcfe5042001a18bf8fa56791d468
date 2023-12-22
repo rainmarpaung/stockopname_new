@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bc8a8180-753d-4a02-95d1-0ea665223e20">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="LocalhostWBApps"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="id_shipment" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select min(date(date2)) as datemin,
+max(date(date2)) as datemax
+from transactions
+where id_shipment = '$P!{id_shipment}']]>
+	</queryString>
+	<field name="datemin" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+	</field>
+	<field name="datemax" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+	</field>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="190" height="16" uuid="1a3f5788-3df3-44de-aaac-de59baf14387"/>
+				<textFieldExpression><![CDATA[$F{datemin}+" to "+$F{datemax} ]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
